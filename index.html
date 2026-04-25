@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+
+<html lang="pl" data-lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adrian Sidorek — CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 fill=%22%231a1a2e%22/><text x=%224%22 y=%2224%22 font-size=%2220%22 font-family=%22monospace%22 font-weight=%22bold%22 fill=%22%23f1c40f%22>AS</text></svg>">
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<nav>
+  <div class="nav-logo">ADR<span>IAN</span>.CV</div>
+  <div class="nav-right">
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+      <span id="langLabel">EN</span>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <ul id="navMenu">
+    <li>
+      <a href="#about" 
+        data-pl="INFO" 
+        data-en="ABOUT">
+        INFO
+      </a>
+    </li>
+    <li>
+      <a href="#skills" 
+        data-pl="SKILLS" 
+        data-en="SKILLS">
+        SKILLS
+      </a>
+    </li>
+    <li>
+      <a href="#exp" 
+        data-pl="KARIERA" 
+        data-en="CAREER">
+        KARIERA
+      </a>
+    </li>
+    <li>
+      <a href="#certs" 
+        data-pl="KURSY" 
+        data-en="CERTS">
+        KURSY
+      </a>
+    </li>
+    <li>
+      <a href="#projects" 
+        data-pl="PROJEKTY" 
+        data-en="PROJECTS">
+        PROJEKTY
+      </a>
+    </li>
+    <li>
+      <a href="#interests" 
+        data-pl="HOBBY" 
+        data-en="HOBBY">
+        HOBBY
+      </a>
+    </li>
+    <li>
+      <a href="#contact" 
+        data-pl="MSG" 
+        data-en="MSG">
+        MSG
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="sec">
+  <div class="hero">
+    <div class="avatar-col">
+      <div class="avatar-frame">
+        <img src="data:image/jpeg;base64,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" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" alt="Adrian Sidorek">
+      </div>
+      <div class="lang-badge" id="learning-badge">
+        <span class="blink-dot"></span>
+        <span 
+          data-pl="UCZĘ SIĘ:" 
+          data-en="LEARNING:">
+          UCZĘ SIĘ:
+        </span>
+        <span id="learning-text"></span>
+      </div>
+    </div>
+    <div>
+      <div 
+        class="hero-label" 
+        data-pl="▶ EMPLOYEE SELECT" 
+        data-en="▶ EMPLOYEE SELECT">
+        ▶ EMPLOYEE SELECT
+      </div>
+      <h1>SIDOREK<span class="cursor"></span></h1>
+      <div 
+        class="hero-role" 
+        data-pl="// SPECJALISTA DS. ŚLADU WĘGLOWEGO · ORLEN S.A." 
+        data-en="// ESG SPECIALIST OF CARBON FOOTPRINT · ORLEN S.A.">
+        // SPECJALISTA CF · ORLEN S.A.
+      </div>
+      <p 
+        class="hero-desc" 
+        data-pl="Mgr inż. Technologii Chemicznej.<br>
+        Obliczam ślad węglowy dla 180+ spółek Grupy ORLEN.<br>
+        Obszar ds. Środowiska · Płock" 
+        data-en="M.Sc. Eng. in Chemical Technology.<br>
+        Carbon footprint analysis for 180+ ORLEN Group companies.<br>
+        Environmental Protection Office · Płock">
+        Mgr inż. Technologii Chemicznej.<br>
+        Obliczam ślad węglowy dla <strong>180+ spółek</strong> Grupy ORLEN.<br>
+        Obszar ds. Środowiska · Płock
+      </p>
+      <div class="btns">
+        <a 
+          href="#contact" 
+          class="btn btn-y" 
+          data-pl="▶ KONTAKT" 
+          data-en="▶ CONTACT">
+          ▶ KONTAKT
+        </a>
+        <a 
+          href="#exp" 
+          class="btn btn-w" 
+          data-pl="KARIERA →" 
+          data-en="CAREER →">
+          KARIERA →
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sec reveal" id="about">
+  <div 
+    class="sec-head" 
+    data-pl="O MNIE" 
+    data-en="ABOUT ME">
+    O MNIE
+  </div>
+  <div class="about-grid">
+    <div class="about-box">
+      <p 
+        data-pl="Magister inżynier Technologii Chemicznej z Politechniki Warszawskiej (filia Płock). Od ponad 5 lat związany z <strong>ORLEN S.A. Obszarem ds. Środowiska</strong> w Płocku." 
+        data-en="M.Sc. Eng. in Chemical Technology from Warsaw University of Technology (Płock campus). Over 5 years at <strong>ORLEN S.A. Environmental Department</strong> in Płock.">
+        Magister inżynier Technologii Chemicznej z Politechniki Warszawskiej (filia Płock). Od ponad 5 lat związany z <strong>ORLEN S.A. Obszarem ds. Środowiska</strong> w Płocku.
+      </p>
+      <p 
+        data-pl="Specjalizuję się w <strong>obliczaniu śladu węglowego</strong> dla całej Grupy Kapitałowej ORLEN — analizuję dane emisji GHG (Scope 1, 2) z ponad 180 spółek. Raportuję zgodnie z GHG Protocol i standardami ESG." 
+        data-en="I specialise in <strong>carbon footprint calculation</strong> for the entire ORLEN Group — analysing GHG emission data (Scope 1, 2) from over 180 companies, reporting under GHG Protocol and ESG standards.">
+        Specjalizuję się w <strong>obliczaniu śladu węglowego</strong> dla całej Grupy Kapitałowej ORLEN — analizuję dane emisji GHG (Scope 1, 2) z ponad <strong>180 spółek</strong>. Raportuję zgodnie z GHG Protocol i standardami ESG.
+      </p>
+      <p 
+        data-pl="Aktywnie rozwijam kompetencje programistyczne: Python, Django, SQL, GitHub." 
+        data-en="Actively developing programming skills: Python, Django, SQL, GitHub.">
+        Aktywnie rozwijam kompetencje programistyczne: Python, Django, SQL, GitHub.
+      </p>
+    </div>
+    <div class="stats">
+      <div class="stat" 
+        style="--card-color:var(--pixel-teal);">
+        <div class="stat-n">
+          Data Science & BI
+        </div>
+        <div class="stat-l" 
+          data-pl="Power BI, SQL (PostgreSQL), Automatyzacja raportowania, Python, ETL" 
+          data-en="Power BI, SQL (PostgreSQL), Report Automation, Python, ETL">
+          Power BI, SQL (PostgreSQL), Automatyzacja raportowania, ETL
+        </div>
+      </div>
+      <div class="stat" 
+        style="--card-color:var(--pixel-yellow);">
+        <div class="stat-n">
+          ESG & Compliance
+        </div>
+        <div class="stat-l" 
+          data-pl="GHG Protocol, ISO 14001, Raportowanie korporacyjne" 
+          data-en="GHG Protocol, ISO 14001, Corporate Reporting">
+          GHG Protocol, ISO 14001, Raportowanie korporacyjne
+        </div>
+      </div>
+      <div class="stat" 
+        style="--card-color:var(--pixel-purple);">
+        <div class="stat-n">
+          Data & Automation
+        </div>
+        <div class="stat-l" 
+          data-pl="Python (Pandas, Pydantic, Pytest, ruff), automatyzacja zbierania danych"
+          data-en="Python (Pandas, Pydantic, Pytest, ruff), automated data collection">
+          Python (Pandas, Pydantic, Pytest, ruff), automatyzacja zbierania danych
+        </div>
+      </div>
+      <div class="stat" 
+        style="--card-color:var(--pixel-green);">
+        <div class="stat-n">
+          Systems & Agile
+        </div>
+        <div class="stat-l" 
+          data-pl="Windows, Linux Ubuntu, SAP MM, Clarity PPM, Jira, zarządzanie projektami" 
+          data-en="Windows, Linux Ubuntu, SAP MM, Clarity PPM, Jira, project management">
+          Windows, Linux Ubuntu, SAP MM, Clarity PPM, Jira, zarządzanie projektami
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div 
+  class="dark">
+  <div class="sec">
+    <div class="lang-box">
+      <div class="lang-title"     
+        data-pl="JĘZYKI:" 
+        data-en="LANGUAGES:">
+        JĘZYKI:
+      </div>
+      <div class="lang-pill">
+        <span>
+          🇬🇧
+        </span> 
+        <span 
+        data-pl="Angielski B2" 
+        data-en="English B2">
+        Angielski B2
+        </span>
+      </div>
+      <div class="lang-pill">
+        <span>
+          🇩🇪
+        </span> 
+        <span 
+          data-pl="Niemiecki A2" 
+          data-en="German A2">
+          Niemiecki A2
+        </span>
+        </div>
+      <div class="lang-pill">
+        <span>
+          🇵🇱
+        </span> 
+        <span 
+          data-pl="Polski — ojczysty" 
+          data-en="Polish — native">
+          Polski — ojczysty
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sec reveal" id="skills">
+  <div class="sec-head" 
+    data-pl="DRZEWKO UMIEJĘTNOŚCI" 
+    data-en="SKILL TREE">
+    DRZEWKO UMIEJĘTNOŚCI
+  </div>
+  <div class="skill-grid">
+    <div class="skill-box"
+      style="--card-color:var(--pixel-blue);">
+      <div class="skill-box-title" 
+        data-pl="DATA &amp; BI" 
+        data-en="DATA &amp; BI">
+        DATA &amp; BI
+      </div>
+      <div class="tags">
+        <span class="tag tag-c-blue">
+          POWER BI
+        </span>
+        <span class="tag tag-c-teal">
+          SQL
+        </span>
+        <span class="tag tag-c-green"
+        data-pl="ŚLAD WĘGLOWY" 
+        data-en="CARBON FOOTPRINT">
+        ŚLAD WĘGLOWY
+      </span>
+        <span class="tag">
+          MS ACCESS
+        </span>
+        <span class="tag">
+          SAP MM
+        </span>
+        <span class="tag">
+          EXCEL
+        </span>
+        <span class="tag">
+          CLARITY PPM
+        </span>
+      </div>
+    </div>
+    <div class="skill-box" 
+      style="--card-color:var(--pixel-orange);">
+      <div class="skill-box-title" 
+        data-pl="PROGRAMOWANIE" 
+        data-en="PROGRAMMING">
+        PROGRAMOWANIE
+      </div>
+      <div class="tags">
+        <span class="tag tag-c-orange">
+          PYTHON
+        </span>
+        <span class="tag tag-c-purple">
+          DJANGO
+        </span>
+        <span class="tag tag-c-blue">
+          DOCKER
+        </span>
+        <span class="tag tag-c-github">
+          GITHUB
+        </span>
+        <span class="tag">
+          VBA
+        </span>
+        <span class="tag">
+          SQL
+        </span>
+        <span class="tag">
+          HTML
+        </span>
+        <span class="tag">
+          JAVA (basics)
+        </span>
+        <span class="tag">
+          LINUX UBUNTU
+        </span>
+      </div>
+    </div>
+    <div class="skill-box" 
+      style="--card-color:var(--pixel-yellow);">
+      <div class="skill-box-title" 
+        data-pl="METODYKI &amp; SYSTEMY" 
+        data-en="METHODS &amp; SYSTEMS">
+        METODYKI &amp; SYSTEMY
+      </div>
+      <div class="tags">
+        <span class="tag tag-c-yellow">
+          SCRUM
+        </span>
+        <span class="tag">
+          JIRA
+        </span>
+        <span class="tag">
+          GHG PROTOCOL
+        </span>
+        <span class="tag">
+          ISO 14001
+        </span>
+        <span class="tag">
+          REACH
+        </span>
+        <span class="tag">
+          SAP MM
+        </span>
+        <span class="tag">
+          ESG REPORTING
+        </span>
+        <span class="tag">
+          MRV
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sec-dark reveal" id="exp">
+  <div class="sec">
+    <div class="sec-head light" 
+      data-pl="KARIERA" 
+      data-en="CAREER">
+      KARIERA
+    </div>
+    <div class="exp-list"
+      style="--card-color:var(--pixel-yellow);">
+      <div class="exp-card">
+        <div class="exp-top">
+          <div class="exp-role" 
+            data-pl="SPECJALISTA" 
+            data-en="SPECIALIST">
+            SPECJALISTA
+          </div>
+          <div class="exp-period" 
+            data-pl="LIP 2023 — TERAZ" 
+            data-en="JUL 2023 — NOW">
+            LIP 2023 — TERAZ
+          </div>
+        </div>
+        <div class="exp-co" 
+          data-pl="▸ ORLEN S.A. Obszar ds. Środowiska · Płock" 
+          data-en="▸ ORLEN S.A. Environment Department · Płock">
+          ▸ ORLEN S.A. Obszar ds. Środowiska · Płock
+        </div>
+        <span class="tag tag-c-red" 
+          data-pl="★ AMBASADOR COPILOT" 
+          data-en="★ COPILOT AMBASSADOR">
+          ★ AMBASADOR COPILOT
+        </span>
+        <div class="exp-txt" 
+          data-pl="Obliczanie i analiza śladu węglowego dla całej Grupy Kapitałowej ORLEN S.A. — <strong>180+ spółek</strong>. Przetwarzanie danych emisji GHG (Scope 1, 2), raportowanie ESG na skalę korporacyjną zgodnie z GHG Protocol." 
+          data-en="Carbon footprint calculation and analysis for the entire ORLEN Capital Group — <strong>180+ companies</strong>. GHG emission data processing (Scope 1, 2), corporate ESG reporting under GHG Protocol.">
+          Obliczanie i analiza śladu węglowego dla całej Grupy Kapitałowej ORLEN S.A. — <strong>180+ spółek</strong>. Przetwarzanie danych emisji GHG (Scope 1, 2), raportowanie ESG na skalę korporacyjną zgodnie z GHG Protocol.
+        </div>
+        <div class="tags">
+          <span class="tag tag-c-green"
+            data-pl="ŚLAD WĘGLOWY" 
+            data-en="CARBON FOOTPRINT">
+            ŚLAD WĘGLOWY
+          </span>
+          <span class="tag tag-c-blue">
+            POWER BI
+          </span>
+          <span class="tag tag-c-teal">
+            ESG
+          </span>
+          <span class="tag">
+            SQL
+          </span>
+          <span class="tag">
+            PYTHON
+          </span>
+          <span class="tag">
+            GHG PROTOCOL
+          </span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div class="exp-role" 
+            data-pl="MŁODSZY SPECJALISTA" 
+            data-en="JUNIOR SPECIALIST">
+            MŁODSZY SPECJALISTA
+          </div>
+          <div class="exp-period" 
+          data-pl="SIE 2021 — LIP 2023" 
+          data-en="AUG 2021 — JUL 2023">
+          SIE 2021 — LIP 2023
+        </div>
+        </div>
+        <div class="exp-co" 
+          data-pl="▸ ORLEN S.A. Biuro Ochrony Środowiska · Polska" 
+          data-en="▸ ORLEN S.A. Environmental Protection Office · Poland">
+          ▸ ORLEN S.A. Biuro Ochrony Środowiska · Polska
+        </div>
+        <div class="exp-txt" 
+          data-pl="Wsparcie procesów raportowania środowiskowego, analiza danych dotyczących emisji i odpadów, obsługa systemów SAP MM i Clarity PPM." 
+          data-en="Support for environmental reporting processes, analysis of emission and waste data, operation of SAP MM and Clarity PPM systems.">
+          Wsparcie procesów raportowania środowiskowego, analiza danych dotyczących emisji i odpadów, obsługa systemów SAP MM i Clarity PPM.
+        </div>
+        <div class="tags">
+          <span class="tag">
+            SAP MM
+          </span>
+          <span class="tag">
+            CLARITY PPM
+          </span>
+          <span class="tag">
+            EXCEL
+          </span>
+          <span class="tag">
+              MS Access
+          </span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div class="exp-role" 
+            data-pl="STARSZY REFERENT" 
+            data-en="SENIOR CLERK">
+            STARSZY REFERENT
+          </div>
+          <div class="exp-period" 
+            data-pl="STY 2021 — SIE 2021" 
+            data-en="JAN 2021 — AUG 2021">
+            STY 2021 — SIE 2021
+          </div>
+        </div>
+        <div class="exp-co">
+          ▸ ORLEN S.A. · Płock
+        </div>
+        <div class="exp-txt" 
+          data-pl="Obsługa procesów administracyjnych i analitycznych w strukturach korporacyjnych." 
+          data-en="Handling of administrative and analytical processes within corporate structures.">
+          Obsługa procesów administracyjnych i analitycznych w strukturach korporacyjnych.
+        </div>
+        <div class="tags">
+          <span class="tag" 
+            data-pl="ADMINISTRACJA" 
+            data-en="ADMINISTRATION">
+            ADMINISTRACJA
+          </span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div class="exp-role" 
+            data-pl="STAŻYSTA — BIURO OCHRONY ŚRODOWISKA" 
+            data-en="INTERN — ENVIRONMENTAL PROTECTION">
+            STAŻYSTA — BIURO OCHRONY ŚRODOWISKA
+          </div>
+          <div class="exp-period" 
+            data-pl="LIP 2020 — STY 2021" 
+            data-en="JUL 2020 — JAN 2021">
+            LIP 2020 — STY 2021
+          </div>
+        </div>
+        <div class="exp-co" 
+          data-pl="▸ ORLEN S.A. · Płock" 
+          data-en="▸ ORLEN S.A. · Płock">
+          ▸ ORLEN S.A. · Płock
+        </div>
+        <div style="margin-bottom:0.6rem;">
+          <span class="tag tag-c-red"
+            data-pl="★ AMBASADOR MARKI PRACODAWCY" 
+            data-en="★ EMPLOYER BRAND AMBASSADOR">
+            ★ AMBASADOR MARKI PRACODAWCY
+          </span>
+        </div>
+        <div class="exp-txt" 
+          data-pl="Staż w Biurze Ochrony Środowiska. Wsparcie zespołu, poznanie procesów środowiskowych i systemu zarządzania ISO 14001." 
+          data-en="Internship in the Environmental Protection Office. Team support, learning environmental processes and ISO 14001 management system.">
+          Staż w Biurze Ochrony Środowiska. Wsparcie zespołu, poznanie procesów środowiskowych i systemu zarządzania ISO 14001.
+        </div>
+        <div class="tags">
+          <span class="tag tag-c-orange" 
+            data-pl="STAŻ" 
+            data-en="INTERNSHIP">
+            STAŻ
+          </span>
+          <span class="tag">
+            ISO 14001
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="exp-box"
+      style="--card-color:var(--pixel-purple);">
+      <div class="sec-head light" 
+        style="margin-bottom:1.25rem;" 
+        data-pl="EDUKACJA" 
+        data-en="EDUCATION">
+        EDUKACJA
+      </div>
+      <div class="exp-list">
+        <div class="exp-card">
+          <div class="exp-top">
+            <div class="exp-role" 
+              data-pl="KURS — PYTHON + DJANGO" 
+              data-en="PYTHON + DJANGO COURSE">
+              KURS — PYTHON + DJANGO
+            </div>
+            <div class="exp-period" 
+              data-pl="W trakcie" 
+              data-en="In progress">
+              W trakcie
+            </div>
+          </div>
+          <div class="exp-co" 
+            data-pl="▸ InfoShareAcademy" 
+            data-en="▸ InfoShareAcademy">
+            ▸ InfoShareAcademy
+          </div>
+          <div class="tags">
+            <span class="tag">
+              PYTHON
+            </span>
+            <span class="tag">
+              DJANGO
+            </span>
+            <span class="tag">
+              SQL
+            </span>
+            <span class="tag">
+              AI
+            </span>
+          </div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-top">
+            <div class="exp-role" 
+              data-pl="STUDIA PODYPLOMOWE — ZARZĄDZANIE ŚRODOWISKOWE" 
+              data-en="POSTGRAD — ENVIRONMENTAL MANAGEMENT">
+              STUDIA PODYPLOMOWE — ZARZĄDZANIE ŚRODOWISKOWE
+            </div>
+            <div class="exp-period" 
+              data-pl="2022 — 2023" 
+              data-en="2022 — 2023">
+              2022 — 2023
+            </div>
+          </div>
+          <div class="exp-co" 
+            data-pl="▸ Politechnika Krakowska im. T. Kościuszki"
+            data-en="▸ Cracow University of Technology">
+            ▸ Politechnika Krakowska im. T. Kościuszki
+          </div>
+          <div class="tags">
+            <span class="tag" 
+              data-pl="ZARZĄDZANIE ŚRODOWISKOWE" 
+              data-en="ENVIRONMENTAL MANAGEMENT">
+              ZARZĄDZANIE ŚRODOWISKOWE
+            </span>
+            <span class="tag">
+              ISO 14001
+            </span>
+          </div>
+        </div>
+        <div class="exp-card" 
+          style="--card-color:var(--pixel-purple);">
+          <div class="exp-top">
+            <div class="exp-role" 
+              data-pl="MGR INŻ. TECHNOLOGIA PETROCHEMICZNA" 
+              data-en="M.SC. ENG. PETROCHEMICAL TECHNOLOGY">
+              MGR INŻ. TECHNOLOGIA PETROCHEMICZNA
+            </div>
+            <div class="exp-period" 
+              data-pl="2020 — 2021" 
+              data-en="2020 — 2021">2020 — 2021
+            </div>
+          </div>
+          <div class="exp-co" 
+            data-pl="▸ Politechnika Warszawska filia Płock" 
+            data-en="▸ Warsaw University of Technology, Płock">
+            ▸ Politechnika Warszawska filia Płock
+          </div>
+          <div class="exp-txt" 
+            data-pl="Praca magisterska: Badanie wpływu plastomeru PE-LD i elastomeru SEBS na właściwości asfaltu drogowego 70/100." 
+            data-en="Thesis: Study of the effect of PE-LD plastomer and SEBS elastomer on the properties of road asphalt 70/100.">
+            Praca magisterska: Badanie wpływu plastomeru PE-LD i elastomeru SEBS na właściwości asfaltu drogowego 70/100.
+          </div>
+          <div class="tags">
+            <span class="tag" data-pl="PETROCHEMIA" data-en="PETROCHEMISTRY">
+              PETROCHEMIA
+            </span>
+            <span class="tag" 
+              data-pl="POLIMERY" 
+              data-en="POLYMERS">
+              POLIMERY
+            </span>
+          </div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-top">
+            <div class="exp-role" 
+              data-pl="INŻ. TECHNOLOGIA CHEMICZNA" 
+              data-en="ENG. CHEMICAL TECHNOLOGY">
+              INŻ. TECHNOLOGIA CHEMICZNA
+            </div>
+            <div class="exp-period" 
+              data-pl="2016 — 2020" 
+              data-en="2016 — 2020">
+              2016 — 2020
+            </div>
+          </div>
+          <div class="exp-co" 
+            data-pl="▸ Politechnika Warszawska filia Płock" 
+            data-en="▸ Warsaw University of Technology, Płock">
+            ▸ Politechnika Warszawska filia Płock
+          </div>
+          <div class="exp-txt" 
+            data-pl="Spec. Technologia Tworzyw Sztucznych. Płockie Koło Naukowe Chemików." 
+            data-en="Spec. Plastics Technology. Płock Scientific Chemistry Circle.">
+            Spec. Technologia Tworzyw Sztucznych. Płockie Koło Naukowe Chemików.
+          </div>
+          <div class="tags">
+            <span class="tag" 
+              data-pl="CHEMIA" 
+              data-en="CHEMISTRY">
+              CHEMIA
+            </span>
+            <span class="tag" 
+              data-pl="TWORZYWA SZTUCZNE" 
+              data-en="PLASTICS">
+              TWORZYWA SZTUCZNE
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sec reveal" id="certs">
+  <div class="sec-head" 
+    data-pl="CERTYFIKATY &amp; KURSY" 
+    data-en="CERTIFICATES &amp; COURSES">
+    CERTYFIKATY &amp; KURSY
+  </div>
+  <div class="cert-grid">
+    <div class="cert-card cc-blue">
+      <div class="cert-year" 
+        data-pl="W trakcie" 
+        data-en="In progress">
+        W trakcie
+      </div>
+      <div class="cert-title" 
+        data-pl="Kurs python + Django" 
+        data-en="Python + Django Course">
+        Kurs python + Django
+      </div>
+      <div class="cert-org">
+        Kurs
+      </div>
+    </div>
+    <div class="cert-card cc-purple">
+      <div class="cert-year">
+        2023
+      </div>
+      <div class="cert-title" 
+        data-pl="Pełnomocnik systemu zarządzania środowiskowego" 
+        data-en="Environmental Management System Representative">
+        Pełnomocnik systemu zarządzania środowiskowego
+      </div>
+      <div class="cert-org">
+        Certyfikat
+      </div>
+    </div>
+    <div class="cert-card cc-purple">
+      <div class="cert-year">
+        2023
+      </div>
+      <div class="cert-title" 
+        data-pl="Auditor wewnętrzny systemu zarządzania środowiskowego" 
+        data-en="Internal Environmental Management System Auditor">
+        Auditor wewnętrzny systemu zarządzania środowiskowego
+      </div>
+      <div class="cert-org">
+        Certyfikat
+      </div>
+    </div>
+    <div class="cert-card cc-blue">
+      <div class="cert-year">
+        2022
+      </div>
+      <div class="cert-title" 
+        data-pl="Kurs Pierwszej Pomocy Przedlekarskiej" 
+        data-en="First Aid Course">
+        Kurs Pierwszej Pomocy Przedlekarskiej
+      </div>
+      <div class="cert-org" 
+        data-pl="Certyfikat" 
+        data-en="Certificate">
+        Kurs
+      </div>
+    </div>
+    <div class="cert-card cc-purple">
+      <div class="cert-year">
+        2018
+      </div>
+      <div class="cert-title" 
+        data-pl="Rozporządzenie REACH w przemyśle chemicznym" 
+        data-en="REACH Regulation in the Chemical Industry">
+        Rozporządzenie REACH w przemyśle chemicznym
+      </div>
+      <div class="cert-org" 
+        data-pl="Certyfikat · Płock" 
+        data-en="Certificate · Płock">
+        Certyfikat
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sec-dark reveal" id="projects">
+  <div class="sec">
+    <div class="sec-head light" 
+      data-pl="PROJEKTY" 
+      data-en="PROJECTS">
+      PROJEKTY
+    </div>
+    <div class="project-grid" 
+        style="--card-color:var(--pixel-teal);">
+      <div class="project-card">
+        <div class="project-label">
+          PROJECT_01
+        </div>
+        <div class="project-title" 
+          data-pl="CF_DB — Ślad Węglowy GK ORLEN" 
+          data-en="CF_DB — ORLEN Group Carbon Footprint">
+          CF_DB — Ślad Węglowy GK ORLEN
+        </div>
+        <div class="project-co" 
+          data-pl="▸ ORLEN S.A. Obszar ds. Środowiska" 
+          data-en="▸ ORLEN S.A. Environmental Department">
+          ▸ ORLEN S.A. Obszar ds. Środowiska
+        </div>
+        <div class="project-desc" 
+          data-pl="Baza danych do kompleksowego zarządzania i obliczania śladu węglowego dla 180+ spółek Grupy Kapitałowej ORLEN. System zbiera dane emisyjne, automatycznie wylicza GHG (Scope 1, 2) i generuje raporty ESG zgodne z GHG Protocol." 
+          data-en="Database for comprehensive management and calculation of carbon footprint for 180+ ORLEN Group companies. The system collects emission data, automatically calculates GHG (Scope 1, 2) and generates GHG Protocol-compliant ESG reports.">
+          Baza danych do kompleksowego zarządzania i obliczania śladu węglowego dla <strong>180+ spółek</strong> Grupy Kapitałowej ORLEN. System zbiera dane emisyjne, automatycznie wylicza GHG (Scope 1, 2) i generuje raporty ESG zgodne z GHG Protocol.
+        </div>
+        <div class="tags">
+          <span class="tag tag-c-green">
+            GHG PROTOCOL
+          </span>
+          <span class="tag tag-c-blue">
+            SQL
+          </span>
+          <span class="tag">
+            ESG
+          </span>
+          <span class="tag">
+            POWER BI
+          </span>
+          <span class="tag">
+            PYTHON
+          </span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-label">
+          PROJECT_02
+        </div>
+        <div class="project-title" 
+          data-pl="Baza Zarządzania Odpadami — ZP w Płocku" 
+          data-en="Waste Management DB — PP in Płock">
+          Baza Zarządzania Odpadami — ZP w Płocku
+        </div>
+        <div class="project-co" 
+          data-pl="▸ ORLEN S.A. Obszar ds. Środowiska" 
+          data-en="▸ ORLEN S.A. Environmental Department">
+          ▸ ORLEN S.A. Obszar ds. Środowiska
+        </div>
+        <div class="project-desc" 
+          data-pl="Baza danych do zarządzania odbiorem odpadów komunalnych. System obsługuje harmonogramowanie, ewidencję rodzajów odpadów, raportowanie ilości oraz kosztów." 
+          data-en="Database for municipal waste collection management. The system handles scheduling, waste type records, quantity and route reporting and billing.">
+          Baza danych do zarządzania odbiorem odpadów komunalnych. System obsługuje harmonogramowanie, ewidencję rodzajów odpadów, raportowanie ilości oraz kosztów.
+        </div>
+        <div class="tags">
+          <span class="tag tag-c-teal"
+            data-pl="BAZA DANYCH" 
+            data-en="DATABASE">
+            BAZA DANYCH
+          </span>
+          <span class="tag tag-c-blue">
+            SQL
+          </span>
+          <span class="tag" 
+            data-pl="GOSPODARKA ODPADAMI" 
+            data-en="WASTE MANAGEMENT">
+            GOSPODARKA ODPADAMI
+          </span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-label">
+          PROJECT_03
+        </div>
+        <div class="project-title" 
+          data-pl="Emission Impossible – System Raportowania ESG" 
+          data-en="Waste Management DB — PP in Płock">
+          Emission Impossible – System Raportowania ESG
+        </div>
+        <div class="project-co" 
+          data-pl="▸ Projekt zespołowy realizowany w ramach InfoShare Academy" 
+          data-en="▸ A team project carried out as part of the InfoShare Academy">
+          ▸ Projekt zespołowy realizowany w ramach InfoShare Academy
+        </div>
+        <div class="project-desc" 
+          data-pl="Zaawansowane narzędzie wspierające specjalistów ESG w monitorowaniu, obliczaniu i raportowaniu śladu węglowego (Scope 1, 2). Projekt realizowany w zespole projektowym w oparciu o metodyki Agile/Scrum, z wykorzystaniem Jiry do zarządzania zadaniami oraz procesu Code Review dla zapewnienia wysokiej jakości kodu." 
+          data-en="An advanced tool designed to help ESG specialists monitor, calculate, and report carbon footprints (Scope 1 and 2). The project is being carried out by a project team using Agile/Scrum methodologies, with Jira for task management and a code review process to ensure high-quality code.">
+          Zaawansowane narzędzie wspierające specjalistów ESG w monitorowaniu, obliczaniu i raportowaniu śladu węglowego (Scope 1, 2). Projekt realizowany w zespole projektowym w oparciu o metodyki Agile/Scrum, z wykorzystaniem Jiry do zarządzania zadaniami oraz procesu Code Review dla zapewnienia wysokiej jakości kodu.
+        </div>
+        <div class="tags">
+          <span class="tag tag-c-teal" 
+            data-pl="BAZA DANYCH" 
+            data-en="DATABASE">
+            BAZA DANYCH
+          </span>
+          <span class="tag tag-c-teal">
+            Python
+          </span>
+          <span class="tag tag-c-blue">
+            SQL
+          </span>
+          <span class="tag tag-c-blue">
+            Docker
+          </span>
+          <span class="tag">
+            Git
+          </span>
+          <span class="tag">
+            Jira
+          </span>
+          <span class="tag">
+            Linux Ubuntu
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sec reveal" id="interests">
+  <div class="sec-head" 
+    data-pl="ZAINTERESOWANIA" 
+    data-en="INTERESTS">
+    ZAINTERESOWANIA
+  </div>
+  <div class="int-grid">
+    <div class="int-card" 
+      style="--card-color:var(--pixel-yellow);">
+      <span class="int-icon">
+        🧩
+      </span>
+      <div class="int-title" 
+        data-pl="ROZWIĄZYWANIE PROBLEMÓW" 
+        data-en="PROBLEM SOLVING">
+        ROZWIĄZYWANIE PROBLEMÓW
+      </div>
+      <div class="int-txt" 
+        data-pl="Każdy problem to łamigłówka, której nie można odpuścić — w danych czy przy debugowaniu kodu." 
+        data-en="Every problem is a puzzle that cannot be left unsolved — in data or debugging code.">
+        Każdy problem to łamigłówka, której nie można odpuścić — w danych czy przy debugowaniu kodu.
+      </div>
+    </div>
+    <div class="int-card" 
+      style=
+        "--card-color:var(--pixel-orange);">
+      <span class="int-icon">
+        ☕
+      </span>
+      <div class="int-title" 
+        data-pl="KAWA" 
+        data-en="COFFEE">
+        KAWA
+      </div>
+      <div class="int-txt" 
+        data-pl="V60, AeroPress, cold brew — każda metoda to inna zmienna. Dane smakują lepiej z espresso." 
+        data-en="V60, AeroPress, cold brew — each method is a different variable. Data tastes better with espresso.">
+        V60, AeroPress, cold brew — każda metoda to inna zmienna. Dane smakują lepiej z espresso.
+      </div>
+    </div>
+    <div class="int-card" 
+      style=
+        "--card-color:var(--pixel-green);">
+      <span class="int-icon">
+        🎲
+      </span>
+      <div class="int-title" 
+        data-pl="GRY PLANSZOWE" 
+        data-en="BOARD GAMES">
+        GRY PLANSZOWE
+      </div>
+      <div class="int-txt" 
+        data-pl="Brass Birmingham, Nemesis, Scythe, HOMM3 W wolnym czasie szukam wyzwań, które pozwalają na chwilę oddechu od danych" 
+        data-en="The Brass Band of Birmingham, Nemesis, Scythe, HOMM3 In my free time, I look for challenges that give me a breather from data">
+        Brass Birmingham, Nemesis, Scythe, HOMM3 W wolnym czasie szukam wyzwań, które pozwalają na chwilę oddechu od danych
+      </div>
+    </div>
+    <div class="int-card" 
+      style=
+        "--card-color:var(--pixel-blue);">
+      <span class="int-icon">
+        ⚽
+      </span>
+      <div class="int-title" 
+        data-pl="PIŁKA NOŻNA" 
+        data-en="FOOTBALL">
+        PIŁKA NOŻNA
+      </div>
+      <div class="int-txt" 
+        data-pl="Śledzę rozgrywki <strong>PREMIER LEAGUE</strong>. Praca zespołowa na boisku uczy tyle samo co w projekcie." 
+        data-en="I follow matches and play recreationally. Teamwork on the pitch teaches as much as in a project.">
+        Śledzę rozgrywki <strong>PREMIER LEAGUE</strong>. Praca zespołowa na boisku uczy tyle samo co w projekcie.
+      </div>
+    </div>
+    <div class="int-card" 
+      style=
+        "--card-color:var(--pixel-purple);">
+      <span class="int-icon">
+        🤖
+      </span>
+      <div class="int-title" 
+        data-pl="SZTUCZNA INTELIGENCJA" 
+        data-en="ARTIFICIAL INTELLIGENCE">
+        SZTUCZNA INTELIGENCJA
+      </div>
+      <div class="int-txt" 
+        data-pl="Śledzę rozwój LLM i narzędzi AI. Aktywnie wykorzystuję AI w pracy analitycznej i programowaniu." 
+        data-en="I follow LLM and AI tool developments. Actively using AI in analytical work and programming.">
+        Śledzę rozwój LLM i narzędzi AI. Aktywnie wykorzystuję AI w pracy analitycznej i programowaniu.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sec-dark reveal" id="contact">
+  <div class="sec">
+    <div class="sec-head light" 
+      data-pl="WYŚLIJ WIADOMOŚĆ" 
+      data-en="GET IN TOUCH">
+      WYŚLIJ WIADOMOŚĆ
+    </div>
+    <div class="contact-grid">
+      <div class="contact-msg">
+        <p 
+          data-pl="SZUKAM NOWYCH" 
+          data-en="OPEN TO NEW">
+          SZUKAM NOWYCH
+        </p>
+        <p>
+          <span class="hi" 
+            data-pl="WYZWAŃ" 
+            data-en="CHALLENGES">
+            WYZWAŃ
+          </span>
+        </p>
+        <p 
+          data-pl="OTWARTY NA WSPÓŁPRACĘ W PROGRAMOWANIU, ANALIZIE DANYCH i RAPORTOWANIU." 
+          data-en="OPEN TO COLLABORATION IN PROGRAMMING, DATA ANALYSIS, AND REPORTING.">
+          OTWARTY NA WSPÓŁPRACĘ W PROGRAMOWANIU, ANALIZIE DANYCH <br>i RAPORTOWANIU.</p>
+      </div>
+      <div class="clinks">
+        <a href="mailto:adriansidorek@gmail.com" class="clink" 
+          style="--card-color:var(--pixel-blue);">
+          <div class="cico">
+              @
+          </div>
+          <div>
+            <div class="c-lbl">
+              EMAIL
+            </div>
+            <div>
+              adriansidorek@gmail.com
+            </div>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/adrian-sidorek" class="clink" 
+          style="--card-color:var(--pixel-teal);">
+          <div class="cico";">IN
+          </div>
+          <div>
+            <div class="c-lbl">
+              LINKEDIN
+            </div>
+            <div>
+              linkedin.com/in/adrian-sidorek
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/SidorekA" class="clink" 
+          style=
+            "--card-color:var(--pixel-yellow);">
+          <div class="cico">
+            &lt;/&gt;
+            </div>
+          <div>
+            <div class="c-lbl">
+            GITHUB
+            </div>
+            <div>
+            github.com/SidorekA
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div 
+    data-pl="© 2025 ADRIAN SIDOREK — POWERED BY COFFEE" 
+    data-en="© 2025 ADRIAN SIDOREK — POWERED BY COFFEE">
+    © 2025 ADRIAN SIDOREK — POWERED BY COFFEE
+  </div>
+  <div class="update-date" 
+    data-pl="Ostatnia aktualizacja: Kwiecień 2025" 
+    data-en="Last updated: April 2025">
+    Ostatnia aktualizacja: Kwiecień 2025
+  </div>
+</footer>
+
+</body>
+</html>
