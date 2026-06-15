@@ -20,4 +20,4 @@ Na co dzień zajmuję się obliczaniem śladu węglowego dla 180+ spółek Grupy
 * **LinkedIn:** [linkedin.com/in/adrian-sidorek](https://linkedin.com/in/adrian-sidorek)
 * **E-mail:** adriansidorek@gmail.com
 
-*Ostatnia aktualizacja: Kwiecień 2026*
+*Ostatnia aktualizacja: Czerwiec 2026*
